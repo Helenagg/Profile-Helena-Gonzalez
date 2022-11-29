@@ -30,11 +30,13 @@ def login():
     if user == None:
         return jsonify({"msg": "Bad username or password"}), 401
     
-    response_body = {
-        "message": "Token created"
-    }
     access_token = create_access_token(identity=user.email)
-    return jsonify(access_token), 200
+    response_body = {
+        "message": "Token created",
+        "token": access_token
+    }
+    
+    return jsonify(response_body), 200
 
 @api.route('/private', methods=['GET'])
 @jwt_required()
@@ -42,6 +44,7 @@ def handle_private():
     
     response_body = {
         "message": "This is a private route",
+        "ok": "true",
         "user": get_jwt_identity()
     }
 
