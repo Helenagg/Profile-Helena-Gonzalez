@@ -21,6 +21,21 @@ def handle_hello():
 
     return jsonify(response_body), 200
 
+@api.route('/signup', methods=['POST'])
+def handle_user():
+    data = request.data
+    data = json.loads(data)
+
+    user = User(email = data['email'], password = data['password'], is_active=True)
+    db.session.add(user)
+    db.session.commit()
+    response_body = {
+        "message": "User created"
+    }
+
+    return jsonify(response_body), 200
+
+
 @api.route('/login', methods=['POST'])
 def login():
     email = request.json.get("email", None)
