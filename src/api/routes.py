@@ -27,10 +27,19 @@ def handle_user():
     data = json.loads(data)
 
     user = User(email = data['email'], password = data['password'], is_active=True)
+
+    # email_exists = request.json.get("email", None)
+    # user_created = User.query.filter_by(email=email_exists).first()
+    # if user_created == email_exists:
+    #     return jsonify({"msg": "El usuario ya existe"})
+
     db.session.add(user)
     db.session.commit()
+
     response_body = {
-        "message": "User created"
+        "email": data['email'],
+        "password": data['password'],
+        "ok": "true"
     }
 
     return jsonify(response_body), 200

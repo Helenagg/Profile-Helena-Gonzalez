@@ -6,8 +6,10 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Signup = () => {
 
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [error, setError] = useState("");
 
     const signup = () => {
         console.log(email, password)
@@ -28,9 +30,14 @@ export const Signup = () => {
 
         fetch("https://3001-4geeksacade-reactflaskh-ea2apv1hwm8.ws-eu79.gitpod.io/api/signup", requestOptions)
         .then(response => response.json())
-        .then(result => console.log(result))
+        .then(result => {
+            if(result.email) {
+                navigate("/")
+            } else {
+                setError('El usuario ya existe')};
+        })
         .catch(error => console.log('error', error));
-        //POST de email y password
+        
         // El usuario debe volver a login para loguearse y obtener el token
         // if email and password is Ok la pagina slatara un alert y redirigirá a login, si el usuario ya
         // existe, lo indicará
@@ -38,17 +45,20 @@ export const Signup = () => {
     
 
     return (
-        <div className="container text-center">
-            <h1>Signup</h1>
+        <div className="container text-center mt-5">
+            <h1>SIGNUP</h1>
             <p>
-                <label>Email: </label>
-                <input onChange={(event) => setEmail(event.target.value)}></input>
+                <label class="form-label">Email: </label>
+                <input class="form-control" onChange={(event) => setEmail(event.target.value)}></input>
             </p>
             <p>
-                <label>Password: </label>
-                <input onChange={(event) => setPassword(event.target.value)}></input>
+                <label class="form-label">Password: </label>
+                <input class="form-control" onChange={(event) => setPassword(event.target.value)}></input>
             </p>
-            <button onClick={signup}>Signup</button>
+            <button class="btn btn-outline-primary" onClick={signup}>Signup</button>
+            {error && <div class="alert alert-danger" role="alert">
+				{error}
+                </div>}
         </div>
     )
 }

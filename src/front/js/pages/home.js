@@ -44,17 +44,17 @@ export const Home = () => {
 
 	return (
 		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<Link to={"/signup"}>Signup</Link>
+			<h1>LOGIN</h1>			
 			<p>
-				<label>Email:</label>
-				<input onChange={(event)=> setEmail(event.target.value)}></input>
+				<label class="form-label">Email:</label>
+				<input class="form-control" onChange={(event)=> setEmail(event.target.value)}></input>
 			</p>
 			<p>
-				<label>Password:</label>
-				<input onChange={(event)=> setPassword(event.target.value)}></input>
+				<label class="form-label">Password:</label>
+				<input class="form-control" onChange={(event)=> setPassword(event.target.value)}></input>
 			</p>
-			<button onClick={login}>Login</button>
+			<button type="button" class="btn btn-outline-primary m-3" onClick={login}>Login</button>
+			<button type="button" class="btn btn-outline-primary m-3"><Link to={"/signup"}>Signup</Link></button>
 			{error && <div class="alert alert-danger" role="alert">
 				{error}
 				</div>}
