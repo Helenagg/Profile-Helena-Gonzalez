@@ -37,6 +37,23 @@ def signup():
 
     return jsonify(response_body), 200
 
+@api.route('/login', methods=['POST'])
+def login ():
+    email = request.json.get("email", None)
+    password = request.json.get("password", None)
+    user = User.query.filter_by(email = email, password = password).first()
+
+    if user == None:
+        return jsonify({"msg": "Bad username or password"}), 401
+
+    access_token = create_access_token(identity=user.email)
+    response_body = {
+         "message": "Token created",
+        "token": access_token
+    }
+
+    return jsonify(response_body), 200
+
 @api.route('/family', methods=['GET'])
 def handle_family():
     family = Family.query.all()
