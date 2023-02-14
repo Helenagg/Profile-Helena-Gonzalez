@@ -54,6 +54,17 @@ def login ():
 
     return jsonify(response_body), 200
 
+@api.route('/private', methods=['GET'])
+@jwt_required()
+def handle_private():
+    response_body = {
+        "message": "This is a private route",
+        "ok": "true",
+        "user": get_jwt_identity()
+    }
+
+    return jsonify(response_body), 200
+
 @api.route('/family', methods=['GET'])
 def handle_family():
     family = Family.query.all()

@@ -42,7 +42,7 @@ export const Person = (props) => {
                     first_name= "Return"
                     btn={
                     <>
-                    <Link to={"/"}>
+                    <Link to={"/family"}>
 					    	<button className="btn btn-outline-primary m-2">Return</button>
                     </Link>
                     <Link to={"/family"}>

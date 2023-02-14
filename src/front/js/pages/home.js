@@ -5,13 +5,15 @@ import "../../styles/home.css";
 import { element } from "prop-types";
 import { Card } from "../component/card";
 import { CreatePerson } from "../component/createPerson";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Home = (props) => {
 	const { store, actions } = useContext(Context);
 	const [result, setResult] = useState([]);
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
+	const navigate = useNavigate();
+	const [error, setError] = useState("");
 
 	const login = () => {
 
@@ -30,9 +32,17 @@ export const Home = (props) => {
 		redirect: 'follow'
 		};
 
-		fetch("https://3001-helenagg-familystaticap-bc1ms6wv7he.ws-eu86.gitpod.io/api/login", requestOptions)
+		fetch(`${process.env.BACKEND_URL}/api/login/`, requestOptions)
 		.then(response => response.json())
-		.then(result => console.log(result))
+		.then(result => {
+			if(result.token) {
+				localStorage.setItem("token", result.token);
+				navigate("/family")
+			}
+			else {
+				setError(result.msg)
+			};
+		})
 		.catch(error => console.log('error', error));
 
 	}
@@ -54,6 +64,9 @@ export const Home = (props) => {
 								<button className="btn btn-outline-primary">Signup</button>
 							</Link>
 						</div>
+						{error && <div className="alert alert-danger" role="alert">
+							{error}
+							</div>}
 					</div>
 				</div>
 			</div>

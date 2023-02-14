@@ -1,15 +1,36 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Context } from "../store/appContext";
 import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 import { element } from "prop-types";
 import { Card } from "../component/card";
 import { CreatePerson } from "../component/createPerson";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Family = (props) => {
 	const { store, actions } = useContext(Context);
-	const [result, setResult] = useState([])
+	const [result, setResult] = useState([]);
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		var myHeaders = new Headers();
+		myHeaders.append("Authorization", "Bearer "+localStorage.getItem("token"));
+
+		var requestOptions = {
+		method: 'GET',
+		headers: myHeaders,
+		redirect: 'follow'
+		};
+
+		fetch(`${process.env.BACKEND_URL}/api/private/`, requestOptions)
+		.then(response => response.json())
+		.then(result => {
+			if(!result.ok) {
+				navigate("/")
+			}
+		})
+		.catch(error => console.log('error', error));
+	}, [])
 
 	const view = () => {
 		var requestOptions = {
