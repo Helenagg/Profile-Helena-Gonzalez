@@ -16,6 +16,16 @@ export const Home = (props) => {
 				<div className="container-fluid">
 					<img src="https://img.pikbest.com/backgrounds/20190730/technology-in-the-concept-of-digital-background-v_1517348jpg!bwr800" style={{height: 400, width:"80%" }}/>
 					<h1 className="">My Profile</h1>
+					<h1 className="">About Me</h1>
+					<h1 className="">Skills</h1>
+					<div className="border border-2 m-0">
+						<img src="https://img.icons8.com/color/480/html-5--v1.png" style={{height:100}}/>
+						<h6>HTML5</h6>
+					</div>
+					<div className="border border-2 m-0">
+						<img src="https://img.icons8.com/color/480/html-5--v1.png" style={{height:100}}/>
+						<h6>HTML5</h6>
+					</div>
 				</div>
 			</div>
 		</>
