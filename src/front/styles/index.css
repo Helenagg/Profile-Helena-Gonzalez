@@ -39,3 +39,44 @@
 .color-border-second {
     border-color: #FDB927;
 }
+
+.cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+}
+
+.cardBox:hover .cardFlip {
+    transform: rotateY(180deg);
+}
+
+.cardFlip {
+    background: green;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation-duration: 1s 1;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: red;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.back {
+    transform: rotateY( 180deg);
+}

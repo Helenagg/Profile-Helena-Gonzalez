@@ -20,6 +20,7 @@ export const Home = (props) => {
 						<p>Hace ya unos años quedé sorprendida ante el encanto de la programación. Desde ese día decidí cual sería mi futuro laboral.</p>
 						<p>Y hoy, aquí estoy, no sin esfuerzo, desarrollando mi primer porfolio para poder mostrar al mundo mi trabajo. Espero que os guste.</p>
 						<p>Empezaré por dejar por aquí a la vista mi Curriculum:</p>
+						<Card/>
 					</div>
 					<h1 className="">About Me</h1>
 					<h1 className="">Skills</h1>
