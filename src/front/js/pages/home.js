@@ -12,10 +12,15 @@ export const Home = (props) => {
 	
 	return (
 		<>
-			<div className="container text-center">
+			<div className="container text-center mt-5">
 				<div className="container-fluid">
-					<img src="https://img.pikbest.com/backgrounds/20190730/technology-in-the-concept-of-digital-background-v_1517348jpg!bwr800" style={{height: 400, width:"80%" }}/>
-					<h1 className="">My Profile</h1>
+					<h1 className="color-title-first">-<b> MY PROFILE </b>-</h1>
+					<div className="container border border-3 color-border-first rounded-pill p-4">
+						<h1>Hello World!!</h1>
+						<p>Hace ya unos años quedé sorprendida ante el encanto de la programación. Desde ese día decidí cual sería mi futuro laboral.</p>
+						<p>Y hoy, aquí estoy, no sin esfuerzo, desarrollando mi primer porfolio para poder mostrar al mundo mi trabajo. Espero que os guste.</p>
+						<p>Empezaré por dejar por aquí a la vista mi Curriculum:</p>
+					</div>
 					<h1 className="">About Me</h1>
 					<h1 className="">Skills</h1>
 					<div className="border border-2 m-0">

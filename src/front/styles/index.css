@@ -4,15 +4,38 @@
 
 .color-first {
    background-color: #552583;
-   color: #FDB927
+   color: #FDB927;
+   width: 150px;
 }
 
 .color-second {
     background-color: #FDB927;
     color: #552583;
+    width: 150px;
 }
 
-a:hover {
+.color-first:hover{
     background-color: #FDB927;
     color: #552583;
+}
+
+.color-second:hover {
+    background-color: #552583;
+    color: #FDB927
+}
+
+.color-title-first {
+    color: #FDB927;
+}
+
+.color-title-second {
+    color: #552583
+}
+
+.color-border-first {
+    border-color: #552583 !important;
+}
+
+.color-border-second {
+    border-color: #FDB927;
 }

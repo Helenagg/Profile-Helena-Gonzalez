@@ -10,10 +10,10 @@ export const Navbar = () => {
 				<img src={background} className="img-fluid"/>
 				<div className="mt-2">
 				<nav className="nav nav-pills nav-fill justify-content-center">
-					<a className="btn color-first m-2 px-5" aria-current="page" href="#">CV</a>
-					<a className="btn color-second m-2 px-5" aria-current="page" href="#">Skills</a>
-					<a className="btn color-first m-2 px-5" aria-current="page" href="#">Proyect</a>
-					<a className="btn color-second m-2 px-5" aria-current="page" href="#">Contact</a>
+					<a className="btn color-first m-2 rounded-pill m-2" aria-current="page" href="#"><b>CV</b></a>
+					<a className="btn color-second m-2 rounded-pill m-2" aria-current="page" href="#"><b>SKILLS</b></a>
+					<a className="btn color-first m-2 rounded-pill m-2" aria-current="page" href="#"><b>PROYECT</b></a>
+					<a className="btn color-second m-2 rounded-pill m-2" aria-current="page" href="#"><b>CONTACT</b></a>
 				</nav>
 				</div>
 			</div>
