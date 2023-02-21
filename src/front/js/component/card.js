@@ -8,12 +8,12 @@ export const Card = (props) => {
         <>
         <div className="boxesContainer">
             <div className="cardBox">
-				<div className="cardFlip rounded">
-					<div className="front">
-						<h1>Helena</h1>
+				<div className="cardFlip" style={{borderRadius: "15px"}}>
+					<div className="front text-center" style={props.frontColor}>
+						<h1 className="position-absolute top-50 start-50 translate-middle">{props.title}</h1>
 					</div>
-					<div className="back">
-						<h1>Gonzalez</h1>
+					<div className="back" style={props.backColor}>
+						<div className="">{props.body}</div>
 					</div>
 				</div>
 			</div>

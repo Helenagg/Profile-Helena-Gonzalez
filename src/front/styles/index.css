@@ -37,16 +37,16 @@
 }
 
 .color-border-second {
-    border-color: #FDB927;
+    border-color: #FDB927 !important;
 }
 
 .cardBox {
-    float: left;
+    /* float: left; */
     font-size: 1.2em;
     margin: 1% 0 0 1%;
     perspective: 800px;
     transition: all 0.3s ease 0s;
-    width: 23.7%;
+    width: 100%;
 }
 
 .cardBox:hover .cardFlip {
@@ -54,7 +54,7 @@
 }
 
 .cardFlip {
-    background: green;
+    background: black;
     cursor: default;
     height: 300px;
     transform-style: preserve-3d;
@@ -67,9 +67,9 @@
 .front, .back {
     backface-visibility: hidden;
     box-sizing: border-box;
-    color: red;
+    color: white;
     display: block;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
     height: 100%;
     padding: 0.8em;
     position: absolute;
