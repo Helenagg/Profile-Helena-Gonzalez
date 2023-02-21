@@ -80,3 +80,7 @@
 .back {
     transform: rotateY( 180deg);
 }
+
+.font-card {
+    font-size: 1.2em !important;
+}
