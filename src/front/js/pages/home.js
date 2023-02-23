@@ -6,6 +6,7 @@ import { element } from "prop-types";
 import { Card } from "../component/card";
 import { CardSkill } from "../component/cardSkill";
 import { Contact } from "../component/contact";
+import { Proyect } from "../component/proyect";
 import { Link, useNavigate } from "react-router-dom";
 
 export const Home = (props) => {
@@ -123,7 +124,23 @@ export const Home = (props) => {
 					</div>
 					<h1 className="color-title-first mt-5">-<b> PROYECT </b>-</h1>
 					<div className="container border border-2 color-border-first rounded p-4">
-						
+						<div className="container">
+							<div className="row justify-content-center">
+								<div className="col-4">
+									<Proyect
+									name="TEAyudo App"
+									description="Configuración de agenda diaria para niños con TEA"
+									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1675786429/TEAyudo_nwllgu.mp4"
+									/>
+								</div>
+								<div className="col-4">
+									<Proyect
+									name="TEAyudo App"
+									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1675786429/TEAyudo_nwllgu.mp4"
+									/>
+								</div>
+							</div>
+						</div>
 					</div>
 					<h1 className="color-title-second mt-5">-<b> CONTACT </b>-</h1>
 					<div className="container border border-2 color-border-second rounded p-4">
