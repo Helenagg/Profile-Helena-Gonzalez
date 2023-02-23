@@ -8,18 +8,20 @@ export const Proyect = (props) => {
         <div className="cardBox">
             <div className="cardFlip" style={{borderRadius: "15px"}}>
                 <div className="front text-center">
+                    <div className="justify-content-center align-items-center mt-5">
                     <h2 className="">{props.name}</h2>
-                    <p className="">{props.description}</p>
+                    <p className="mt-3">{props.description}</p>
+                    </div>
                 </div>
                 <div className="back">
                 <ReactPlayer
-                            url={props.url}
-                            className='react-player'
-                            playing={false}
-                            width='100%'
-                            height='100%'
-                            controls={true}
-                            />
+                    url={props.url}
+                    className='react-player'
+                    playing={false}
+                    width='100%'
+                    height='100%'
+                    controls={true}
+                />
                 </div>
             </div>
         </div>
