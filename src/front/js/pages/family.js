@@ -4,7 +4,7 @@ import rigoImageUrl from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
 import { element } from "prop-types";
 import { Card } from "../component/card";
-import { CreatePerson } from "../component/createPerson";
+import { Contact } from "../component/contact";
 import { Link, useNavigate } from "react-router-dom";
 
 export const Family = (props) => {
