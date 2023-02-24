@@ -12,7 +12,7 @@ export const CardSkill = (props) => {
 					<div className="front align-items-center border border-2 color-border-first rounded">
 						<img src={props.image} style={{height:100}}/>
 					</div>
-					<div className="back align-items-center border color-border-first">
+					<div className="back align-items-center border border-2 color-border-first rounded">
 						<h2 className="font-card">{props.title}</h2>
 					</div>
 				</div>

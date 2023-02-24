@@ -130,13 +130,16 @@ export const Home = (props) => {
 									<Proyect
 									name="TEAyudo App"
 									description="Configuración de agenda diaria para niños con TEA"
+									methods="React, HTML, CSS, Bootstrap, Phyton, JavaScript, Flask-Alchemy, Fetch API, JWT Extended."
 									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1675786429/TEAyudo_nwllgu.mp4"
 									/>
 								</div>
 								<div className="col-4">
 									<Proyect
-									name="TEAyudo App"
-									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1675786429/TEAyudo_nwllgu.mp4"
+									name="StarWars Blog"
+									description="Conexión con API: SWAPI para visualizar datos e imágenes en un blog de StarWars"
+									methods="React, HTML, CSS, Bootstrap, Phyton, JavaScript, Fetch API"
+									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1677239538/Video_StarWars_eyopdt.mp4"
 									/>
 								</div>
 							</div>
