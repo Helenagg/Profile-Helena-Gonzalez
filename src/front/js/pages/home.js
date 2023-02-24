@@ -7,6 +7,7 @@ import { Card } from "../component/card";
 import { CardSkill } from "../component/cardSkill";
 import { Contact } from "../component/contact";
 import { Proyect } from "../component/proyect";
+import { CardProyect } from "../component/cardProyect";
 import { Link, useNavigate } from "react-router-dom";
 
 export const Home = (props) => {
@@ -140,6 +141,14 @@ export const Home = (props) => {
 									description="Conexión con API: SWAPI para visualizar datos e imágenes en un blog de StarWars"
 									methods="React, HTML, CSS, Bootstrap, Phyton, JavaScript, Fetch API"
 									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1677239538/Video_StarWars_eyopdt.mp4"
+									/>
+								</div>
+								<div className="col-4">
+									<CardProyect
+									name="Family API"
+									description="Creación de API sencilla para la visualización de miembros de una familia"
+									methods="React, HTML, CSS, Bootstrap, Phyton, JavaScript, Fetch API"
+									src="https://res.cloudinary.com/dmo7sg1on/image/upload/v1677262133/Collage_Family_fe8ruu.jpg"
 									/>
 								</div>
 							</div>
