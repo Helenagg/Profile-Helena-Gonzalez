@@ -10,10 +10,9 @@ export const Proyect = (props) => {
                     <div className="cardFlip mb-4" style={{borderRadius: "15px"}}>
                         <div className="front text-center">
                             <div className="justify-content-center align-items-center mt-2 border color-border-second rounded p-4">
-                                <h2 className="">{props.name}</h2>
+                                <h2 className="color-title-second">{props.name}</h2>
                                 <p className="mt-3">{props.description}</p>
                                 <p className="mt-3">{props.methods}</p>
-                                
                             </div>
                         </div>
                         <div className="back">
@@ -26,7 +25,7 @@ export const Proyect = (props) => {
                                     height='100%'
                                     controls={true}
                                 />
-                                <a className="text-reset text-decoration-none mt-2" href={props.href}>{props.name}</a>
+                                <a className="text-reset text-decoration-none mt-2" href={props.href} target="_blank">{props.name}</a>
                             </div>
                         </div>
                     </div>

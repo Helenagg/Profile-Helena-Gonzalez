@@ -11,20 +11,20 @@ export const CardProyect = (props) => {
                     <div className="cardFlip mb-4" style={{borderRadius: "15px"}}>
                         <div className="front text-center">
                             <div className="justify-content-center align-items-center mt-2 border color-border-second rounded p-4">
-                            <h2 className="">{props.name}</h2>
-                            <p className="mt-3">{props.description}</p>
-                            <p className="mt-3">{props.methods}</p>                            
+                                <h2 className="color-title-second">{props.name}</h2>
+                                <p className="mt-3">{props.description}</p>
+                                <p className="mt-3">{props.methods}</p>                            
                             </div>
                         </div>
                         <div className="back">
                             <div className="justify-content-center align-items-center border color-border-second rounded p-4">
                                 <img className="img-fluid" src={props.src}/>
-                                <a className="text-reset text-decoration-none" href={props.href}>{props.name}</a>
+                                <a className="text-reset text-decoration-none" href={props.href} target="_blank">{props.name}</a>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </>
+        </>
     )
 }
