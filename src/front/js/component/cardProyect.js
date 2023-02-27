@@ -13,12 +13,14 @@ export const CardProyect = (props) => {
                             <div className="justify-content-center align-items-center mt-2 border color-border-second rounded p-4">
                             <h2 className="">{props.name}</h2>
                             <p className="mt-3">{props.description}</p>
-                            <p className="mt-3">{props.methods}</p>
-                            <a className="text-reset text-decoration-none" href={props.href}>link</a>
+                            <p className="mt-3">{props.methods}</p>                            
                             </div>
                         </div>
-                        <div className="back border mt-2 color-border-second rounded">
-                        <img className="img-fluid" src={props.src}/>
+                        <div className="back">
+                            <div className="justify-content-center align-items-center border color-border-second rounded p-4">
+                                <img className="img-fluid" src={props.src}/>
+                                <a className="text-reset text-decoration-none" href={props.href}>{props.name}</a>
+                            </div>
                     </div>
                 </div>
             </div>

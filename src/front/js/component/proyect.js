@@ -13,7 +13,7 @@ export const Proyect = (props) => {
                                 <h2 className="">{props.name}</h2>
                                 <p className="mt-3">{props.description}</p>
                                 <p className="mt-3">{props.methods}</p>
-                                <a className="text-reset text-decoration-none" href={props.href}>link</a>
+                                
                             </div>
                         </div>
                         <div className="back">
@@ -26,6 +26,7 @@ export const Proyect = (props) => {
                                     height='100%'
                                     controls={true}
                                 />
+                                <a className="text-reset text-decoration-none mt-2" href={props.href}>{props.name}</a>
                             </div>
                         </div>
                     </div>
