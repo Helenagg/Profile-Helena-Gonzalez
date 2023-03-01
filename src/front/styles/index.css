@@ -54,6 +54,7 @@
 }
 
 .cardFlip {
+    position: relative;
     background: black;
     cursor: default;
     height: 300px;
@@ -62,9 +63,16 @@
     width: 100%;
     -webkit-animation: giro 1s 1;
     animation-duration: 1s 1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.cardFlip:hover {
+    transform: rotateY(180deg);
 }
 
 .front, .back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-sizing: border-box;
     color: white;
@@ -78,7 +86,7 @@
 }
 
 .back {
-    transform: rotateY( 180deg);
+    transform: rotateY(180deg);
 }
 
 .font-card {
