@@ -6,7 +6,6 @@ export const Card = (props) => {
 
     return (
         <>
-        <div className="boxesContainer">
             <div className="cardBox">
 				<div className="cardFlip" style={{borderRadius: "15px"}}>
 					<div className="front text-center" style={props.frontColor}>
@@ -17,7 +16,6 @@ export const Card = (props) => {
 					</div>
 				</div>
 			</div>
-        </div>
-    </>
+		</>
     )
 }

@@ -6,7 +6,6 @@ export const CardSkill = (props) => {
 
     return (
         <>
-        <div className="boxesContainer text-center">
             <div className="cardBox text-center">
 				<div className="cardFlip text-center" style={{borderRadius: "15px", width: 130, height: 130}}>
 					<div className="front align-items-center border border-2 color-border-first rounded">
@@ -17,7 +16,6 @@ export const CardSkill = (props) => {
 					</div>
 				</div>
 			</div>
-        </div>
-    </>
+    	</>
     )
 }
