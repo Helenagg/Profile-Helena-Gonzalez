@@ -84,3 +84,30 @@
 .font-card {
     font-size: 1.2em !important;
 }
+
+@media screen and (max-width: 767px) {
+  
+    .cardBox {
+      margin-left: 2.8%;
+      margin-top: 3%;
+      width: 46%;
+    }
+  
+    .cardFlip {
+      height: 285px;
+    }
+  
+    .cardBox:last-child {
+      margin-bottom: 3%;
+    }
+  
+  }  
+  
+  @media screen and (max-width: 480px) {
+  
+    .cardBox {
+      width: 94.5%;
+      height: 290px;
+    }
+  
+  }
