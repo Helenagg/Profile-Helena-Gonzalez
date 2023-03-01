@@ -33,7 +33,7 @@ export const Home = (props) => {
 									body={
 										<>
 											<h3>4Geeks Academy</h3>
-											<p>Full-Stack Software Developer</p>
+											<p>Full-Stack Software Developer</p><br/>
 											<h3>Desarrollador Aplicaciones Web</h3>
 										</>
 									}
@@ -49,7 +49,7 @@ export const Home = (props) => {
 											<h5>Desarrollo Web, SIB</h5>
 											<p>Creación de landing. Actualización de webs.</p>
 											<h5>Responsable BO, Vodafone</h5>
-											<p>Intermediario entre Vodafone y comerciales directos. Gestión de clientes.</p>
+											<p>Intermediario entre Vodafone y comerciales. Gestión de clientes.</p>
 										</>}
 									/>
 								</div>
@@ -57,65 +57,65 @@ export const Home = (props) => {
 						</div>
 					</div>
 					<h1 className="color-title-second mt-5" id="skills">-<b> SKILLS </b>-</h1>
-					<div className="container border border-2 color-border-second rounded p-4">
-						<div className="row justify-content-center offset-1">
-							<div className="col">
+					<div className="container border border-2 color-border-second rounded">
+						<div className="row justify-content-center offset-1 p-4">
+							<div className="col-md-2 col-12">
 								<CardSkill
 									image="https://img.icons8.com/color/480/html-5--v1.png"
 									title="HTML5"
 								/>
 							</div>
-							<div className="col">
+							<div className="col-md-2 col-12">
 								<CardSkill
 									image="https://img.icons8.com/color/512/css3.png"
 									title="CSS"
 								/>
 							</div>
-							<div className="col">
+							<div className="col-md-2 col-12">
 								<CardSkill
 									image="https://img.icons8.com/color/512/javascript--v1.png"
 									title="JavaScript"
 								/>
 							</div>
-							<div className="col">
+							<div className="col-md-2 col-12">
 								<CardSkill
 									image="https://img.icons8.com/color/512/react-native.png"
 									title="React"
 								/>
 							</div>
-							<div className="col">
+							<div className="col-md-2 col-12">
 								<CardSkill
 									image="https://img.icons8.com/color/2x/bootstrap.png"
 									title="Bootstrap"
 								/>
 							</div>
 						</div>
-						<div className="row justify-content-center mt-3 offset-1">
-							<div className="col">
+						<div className="row justify-content-center mt-3 mb-0 offset-1">
+							<div className="col-md-2 col-12">
 							<CardSkill
 									image="https://img.icons8.com/color/512/python.png"
 									title="Python"
 								/>
 							</div>
-							<div className="col">
+							<div className="col-md-2 col-12">
 								<CardSkill
 										image="https://img.icons8.com/color/512/php.png"
 										title="PHP"
 									/>
 							</div>
-							<div className="col">
+							<div className="col-md-2 col-12">
 								<CardSkill
 									image="https://img.icons8.com/color/512/mysql-logo.png"
 									title="MySQL"
 								/>
 							</div>
-							<div className="col">
+							<div className="col-md-2 col-12">
 								<CardSkill
 									image="https://img.icons8.com/cute-clipart/512/flask.png"
 									title="Flask"
 								/>
 							</div>
-							<div className="col">
+							<div className="col-md-2 col-12">
 								<CardSkill
 									image="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
 									title="GitHub"

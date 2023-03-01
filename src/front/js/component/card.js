@@ -12,7 +12,7 @@ export const Card = (props) => {
 						<h1 className="position-absolute top-50 start-50 translate-middle">{props.title}</h1>
 					</div>
 					<div className="back" style={props.backColor}>
-						<div className="">{props.body}</div>
+						<div className="mt-4">{props.body}</div>
 					</div>
 				</div>
 			</div>
