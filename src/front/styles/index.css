@@ -49,7 +49,16 @@
     transition: all 0.3s ease 0s;
     /* width: 100%; */
     width: 300px;
-    height: 300px;
+    height: 325px;
+}
+
+.cardSkill {
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 1000px;
+    transition: all 0.3s ease 0s;
+    width: 150px;
+    height: 150px;
 }
 
 .cardFlip {
@@ -71,7 +80,8 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.cardBox:hover .cardFlip {
+.cardBox:hover .cardFlip,
+.cardSkill:hover .cardFlip {
     transform: rotateY(180deg);
 }
 
@@ -103,7 +113,8 @@
 
 @media screen and (max-width: 767px) {
   
-    .cardBox {
+    .cardBox,
+    .cardSkill {
       margin-left: 2.8%;
       margin-top: 3%;
       width: 46%;
@@ -113,7 +124,8 @@
       height: 285px;
     }
   
-    .cardBox:last-child {
+    .cardBox:last-child,
+    .cardSkil:last-child {
       margin-bottom: 3%;
     }
   
@@ -121,7 +133,8 @@
   
   @media screen and (max-width: 480px) {
   
-    .cardBox {
+    .cardBox,
+    .cardSkill {
       width: 94.5%;
       height: 290px;
     }
