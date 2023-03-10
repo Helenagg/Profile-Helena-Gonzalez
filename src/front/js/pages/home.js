@@ -140,7 +140,7 @@ export const Home = (props) => {
 									name="StarWars Blog"
 									description="Conexión con API: SWAPI para visualizar datos en un blog de StarWars"
 									methods="React, HTML, CSS, Bootstrap, Phyton, JavaScript, Fetch API"
-									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1677239538/Video_StarWars_eyopdt.mp4"
+									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1678441055/Vi%CC%81deo_Star_Wars_Helena_jtdbpq.mp4"
 									href="https://github.com/Helenagg/Starwars-blog-reading-list"
 								/>
 							</div>
