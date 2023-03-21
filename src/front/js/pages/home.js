@@ -23,9 +23,17 @@ export const Home = (props) => {
 						<p>Hace ya unos años quedé sorprendida ante el encanto de la programación. Desde ese día decidí cual sería mi futuro laboral.</p>
 						<p>Y hoy, aquí estoy, no sin esfuerzo, desarrollando mi primer porfolio para poder mostrar al mundo mi trabajo. Espero que os guste.</p>
 						<p>Empezaré por dejar por aquí a la vista mi Curriculum:</p>
+						<Contact
+							column="color-title-first fs-5 mb-2"
+							name="bi bi-file-earmark-person"
+							dsvg="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"
+							
+							href="https://drive.google.com/file/d/1ldLloFCEIb_jbPIQ5MX-fmUFlut44bMm/view?usp=share_link"
+							detail="CV Helena González"
+						/>
 						<div className="container">
 							<div className="row justify-content-center">
-								<div className="col-md-3 col-12">
+								<div className="col-md-4 col-12">
 									<Card 
 									frontColor={{backgroundColor:"#553583", color:"#FDB927", borderRadius: "15px"}}
 									backColor={{backgroundColor:"#FDB927", color:"#552583", borderRadius: "15px"}}
@@ -130,7 +138,7 @@ export const Home = (props) => {
 								<Proyect
 									name="TEAyudo App"
 									description="Configuración de agenda diaria para niños con TEA"
-									methods="React, HTML, CSS, Bootstrap, Phyton, JavaScript, Flask-Alchemy, Fetch API, JWT Extended."
+									methods="React, HTML, CSS, Bootstrap, Phyton, JavaScript, Flask-Alchemy, Fetch API, JWT."
 									url="https://res.cloudinary.com/dmo7sg1on/video/upload/v1675786429/TEAyudo_nwllgu.mp4"
 									href="https://github.com/Helenagg/Los-Inclusives"
 								/>
